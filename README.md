@@ -1,16 +1,16 @@
-# Just a simple service to assist with Nested Navigation in Flutter...
+# Nested Navigation Service
 
-Ever tried to implement nested navigation in Flutter and found it a bit confusing and/or time-consuming for smaller projects? This package aims to solve just that. It creates an abstraction layer to be used when doing simple Nested Navigation. 
+Ever tried to implement nested navigation in Flutter and found it a bit confusing and/or time-consuming for smaller projects? This package aims to solve just that. It creates an abstraction layer to be used when doing simple Nested Navigation.
 
-Developed by Kyriakos Giannakis (Technical Manager, Konnektable Technologies)
+:computer: Developed by [Kyriakos Giannakis](https://www.linkedin.com/in/kgiannakis/) (Technical Manager, [Konnektable Technologies](https://konnektable.com/))
 
-License: MIT
+:key: License: MIT
 
-## Package Requirements:
+## :package: Package Requirements:
 - Dart >= 2.12
 - A way to inject the service in the widget tree. I personally use [Flutter Bloc](https://pub.dev/packages/flutter_bloc), which in turn uses Provider but you can also use [Provider](https://pub.dev/packages/provider) directly if you don't use Bloc in your project.
 
-## Installation/Implementation:
+## :arrow_down_small: Installation/Implementation:
 
 - Step 1: Copy and paste the `nested_navigation_service.dart` file into your project.
 - Step 2: Initialize and inject it in your widget tree:
@@ -41,7 +41,7 @@ return Scaffold(
 
 In the example above, the `getNearest` function is used to get the nearest service instance from the tree.
 
-## Usage:
+## :soccer: Usage:
 
 ### Push:
 
@@ -106,3 +106,7 @@ Future<String> nextResult = NestedNavigatorService.getNearest(context).replace<S
   // Do not confuse it with nextResult.
 )
 ```
+
+## :beetle: Contributions/Bugs/Suggestions:
+
+Have something you'd wish to add/suggest? All contributions in the form of code and/or bug reports are welcome! Don't hesitate to open a Pull Request and/or issue and we can discuss.
